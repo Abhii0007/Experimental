@@ -1,3 +1,6 @@
+#To Use this Project, make sure (manage.py and this project's main.py) must in same directory to link to the database.
+
+
 Django Master v1.0 - GUI Tool for Django Automation
 Django Master v1.0 is an intuitive GUI tool designed to simplify the most common Django operations that typically require manual command-line interactions. This project streamlines essential Django tasks, including database management, running the development server, accessing the admin interface, and much more.
 
