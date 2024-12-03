@@ -105,9 +105,16 @@ class window(QMainWindow):
             
             os.system(f"{cmd}")
     def open_site(self,text):
+        global window_x
         txt = self.form.lineEdit.text()
         url = f"{txt}" + f"{text}"
-        os.system(f"start {url}")
+        #os.system(f"start {url}")
+        
+        window_x = window_name2()
+        window_x.show()
+        window_x.form.lineEdit.setText(url)
+        window_x.form.webEngineView_5.setUrl(url)
+        
     
     def clear(self):
         os.system('cls')
@@ -136,8 +143,28 @@ class window(QMainWindow):
 
         
 
+from window2 import Ui_designer
+class window_name2(QMainWindow):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.form = Ui_designer()
+        self.form.setupUi(self)
+        self.form.lineEdit.returnPressed.connect(self.search)
+        self.form.toolButton_aerrow_left.triggered.connect(lambda: self.form.webEngineView_5.page().triggerAction(self.form.webEngineView_5.page().WebAction.GoBack))
+        self.form.toolButton_aerrow_right.triggered.connect(lambda: self.form.webEngineView_5.page().triggerAction(self.form.webEngineView_5.page().WebAction.GoForward))
+        self.form.toolButton_refresh.triggered.connect(lambda: self.form.webEngineView_5.page().triggerAction(self.form.webEngineView_5.page().WebAction.ReloadAndBypassCache)) 
+        self.resizeEvent = self.resize_webview
+        
+    def search(self):
+        url = self.form.lineEdit.text()
+        if not url.startswith('http://') and not url.startswith('https://'):
+            url = 'http://' + url
+        self.form.webEngineView_5.setUrl(url)
 
+    
 
+    def resize_webview(self, event):
+        self.form.webEngineView_5.resize(self.width(), self.height())
 
 
         
@@ -145,4 +172,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     widget = window()
     widget.show()
+    
+    
     sys.exit(app.exec())
