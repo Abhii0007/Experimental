@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'Form2OQvFns.ui'
+## Form generated from reading UI file 'Form2MdPoqw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -23,7 +23,7 @@ class Ui_designer(object):
     def setupUi(self, designer):
         if not designer.objectName():
             designer.setObjectName(u"designer")
-        designer.resize(1000, 700)
+        designer.resize(690, 390)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -36,12 +36,23 @@ class Ui_designer(object):
 "background-color: rgb(0, 0, 0);")
         self.webEngineView_5 = QWebEngineView(designer)
         self.webEngineView_5.setObjectName(u"webEngineView_5")
-        self.webEngineView_5.setGeometry(QRect(0, 22, 1000, 700))
+        self.webEngineView_5.setGeometry(QRect(2, 2, 686, 386))
         self.webEngineView_5.setUrl(QUrl(u"https://www.google.co.in/"))
         self.webEngineView_5.setZoomFactor(0.800000000000000)
+        self.lineEdit = QLineEdit(designer)
+        self.lineEdit.setObjectName(u"lineEdit")
+        self.lineEdit.setGeometry(QRect(64, 36, 1743, 20))
+        sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
+        self.lineEdit.setSizePolicy(sizePolicy)
+        font = QFont()
+        font.setPointSize(12)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet(u"background-color: rgba(0, 0, 0,0.8);\n"
+"color: rgb(255, 255, 255);")
+        self.lineEdit.setFrame(False)
         self.toolButton_aerrow_left = QToolButton(designer)
         self.toolButton_aerrow_left.setObjectName(u"toolButton_aerrow_left")
-        self.toolButton_aerrow_left.setGeometry(QRect(6, -1, 22, 22))
+        self.toolButton_aerrow_left.setGeometry(QRect(379, 5, 22, 22))
         self.toolButton_aerrow_left.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.toolButton_aerrow_left.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         icon = QIcon()
@@ -52,7 +63,7 @@ class Ui_designer(object):
         self.toolButton_aerrow_left.setArrowType(Qt.ArrowType.NoArrow)
         self.toolButton_aerrow_right = QToolButton(designer)
         self.toolButton_aerrow_right.setObjectName(u"toolButton_aerrow_right")
-        self.toolButton_aerrow_right.setGeometry(QRect(31, -1, 22, 22))
+        self.toolButton_aerrow_right.setGeometry(QRect(404, 5, 22, 22))
         self.toolButton_aerrow_right.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.toolButton_aerrow_right.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         icon1 = QIcon()
@@ -63,7 +74,7 @@ class Ui_designer(object):
         self.toolButton_aerrow_right.setArrowType(Qt.ArrowType.NoArrow)
         self.pushButton_go = QToolButton(designer)
         self.pushButton_go.setObjectName(u"pushButton_go")
-        self.pushButton_go.setGeometry(QRect(83, -1, 22, 22))
+        self.pushButton_go.setGeometry(QRect(456, 5, 22, 22))
         self.pushButton_go.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         icon2 = QIcon()
         icon2.addFile(u"../../../Octopus v1.71/images/redirect.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -73,7 +84,7 @@ class Ui_designer(object):
         self.pushButton_go.setArrowType(Qt.ArrowType.NoArrow)
         self.toolButton_refresh = QToolButton(designer)
         self.toolButton_refresh.setObjectName(u"toolButton_refresh")
-        self.toolButton_refresh.setGeometry(QRect(56, -2, 25, 25))
+        self.toolButton_refresh.setGeometry(QRect(429, 4, 25, 25))
         self.toolButton_refresh.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         icon3 = QIcon()
         icon3.addFile(u"../../../Octopus v1.71/images/refresh.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -83,11 +94,11 @@ class Ui_designer(object):
         self.toolButton_refresh.setArrowType(Qt.ArrowType.NoArrow)
         self.widget_toolbar = QWidget(designer)
         self.widget_toolbar.setObjectName(u"widget_toolbar")
-        self.widget_toolbar.setGeometry(QRect(0, 0, 1000, 22))
+        self.widget_toolbar.setGeometry(QRect(373, 6, 211, 22))
         self.widget_toolbar.setStyleSheet(u"background-color: rgb(32, 32, 32);")
         self.pushButton_maximise = QToolButton(self.widget_toolbar)
         self.pushButton_maximise.setObjectName(u"pushButton_maximise")
-        self.pushButton_maximise.setGeometry(QRect(107, 0, 22, 22))
+        self.pushButton_maximise.setGeometry(QRect(160, 0, 22, 22))
         self.pushButton_maximise.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         icon4 = QIcon()
         icon4.addFile(u"../../../Octopus v1.71/images/maximise.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -95,17 +106,24 @@ class Ui_designer(object):
         self.pushButton_maximise.setIconSize(QSize(20, 20))
         self.pushButton_maximise.setPopupMode(QToolButton.ToolButtonPopupMode.DelayedPopup)
         self.pushButton_maximise.setArrowType(Qt.ArrowType.NoArrow)
-        self.lineEdit = QLineEdit(self.widget_toolbar)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(136, 0, 721, 22))
-        self.lineEdit.setStyleSheet(u"background-color: rgb(227, 227, 227);\n"
-"color: rgb(0, 0, 0);")
+        self.pushButton_save_page = QToolButton(designer)
+        self.pushButton_save_page.setObjectName(u"pushButton_save_page")
+        self.pushButton_save_page.setGeometry(QRect(502, 7, 22, 22))
+        self.pushButton_save_page.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
+        icon5 = QIcon()
+        icon5.addFile(u"../../../Octopus v1.71/images/save_page.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton_save_page.setIcon(icon5)
+        self.pushButton_save_page.setIconSize(QSize(20, 20))
+        self.pushButton_save_page.setPopupMode(QToolButton.ToolButtonPopupMode.DelayedPopup)
+        self.pushButton_save_page.setArrowType(Qt.ArrowType.NoArrow)
         self.widget_toolbar.raise_()
         self.webEngineView_5.raise_()
         self.toolButton_aerrow_left.raise_()
         self.toolButton_aerrow_right.raise_()
         self.toolButton_refresh.raise_()
         self.pushButton_go.raise_()
+        self.lineEdit.raise_()
+        self.pushButton_save_page.raise_()
 
         self.retranslateUi(designer)
 
@@ -114,6 +132,8 @@ class Ui_designer(object):
 
     def retranslateUi(self, designer):
         designer.setWindowTitle(QCoreApplication.translate("designer", u"Form", None))
+        self.lineEdit.setText("")
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("designer", u"Enter Custom URL in this Format ex :-    https://www.google.com/search?q={query}", None))
 #if QT_CONFIG(tooltip)
         self.toolButton_aerrow_left.setToolTip(QCoreApplication.translate("designer", u"<html><head/><body><p>Go to Previous Page</p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
@@ -134,5 +154,9 @@ class Ui_designer(object):
         self.pushButton_maximise.setToolTip(QCoreApplication.translate("designer", u"<html><head/><body><p>FullScreen / Normal</p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
         self.pushButton_maximise.setText("")
+#if QT_CONFIG(tooltip)
+        self.pushButton_save_page.setToolTip(QCoreApplication.translate("designer", u"<html><head/><body><p>Save Current Page</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pushButton_save_page.setText("")
     # retranslateUi
 
